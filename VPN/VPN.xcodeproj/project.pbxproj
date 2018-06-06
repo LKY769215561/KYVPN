@@ -11,6 +11,9 @@
 		54F768EF20C64FBA005A48C2 /* KYVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F768EE20C64FBA005A48C2 /* KYVPNManager.m */; };
 		54FD744520C78515000088D6 /* KYPingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FD744120C78514000088D6 /* KYPingTool.m */; };
 		54FD744620C78515000088D6 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FD744320C78514000088D6 /* SimplePing.m */; };
+		54FD748220C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54FD748120C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54FD748620C7CD6F000088D6 /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = 54FD748520C7CD6F000088D6 /* Stickers.xcstickers */; };
+		54FD748720C7CD6F000088D6 /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = 54FD748520C7CD6F000088D6 /* Stickers.xcstickers */; };
 		865FD45A1EE14BFC000F243F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 865FD4591EE14BFC000F243F /* main.m */; };
 		865FD45D1EE14BFC000F243F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 865FD45C1EE14BFC000F243F /* AppDelegate.m */; };
 		865FD4601EE14BFC000F243F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865FD45F1EE14BFC000F243F /* ViewController.m */; };
@@ -21,21 +24,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		865FD46F1EE14BFC000F243F /* PBXContainerItemProxy */ = {
+		54FD748320C7CD6F000088D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 865FD44D1EE14BFC000F243F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 865FD4541EE14BFC000F243F;
-			remoteInfo = VPN;
-		};
-		865FD47A1EE14BFC000F243F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 865FD44D1EE14BFC000F243F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 865FD4541EE14BFC000F243F;
-			remoteInfo = VPN;
+			remoteGlobalIDString = 54FD748020C7CD6F000088D6;
+			remoteInfo = "KYIMessageTest2 StickerPackExtension";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54FD748B20C7CD6F000088D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54FD748220C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		54F768EA20C626E9005A48C2 /* KYKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYKeychain.h; sourceTree = "<group>"; };
@@ -46,6 +56,10 @@
 		54FD744220C78514000088D6 /* KYPingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPingTool.h; sourceTree = "<group>"; };
 		54FD744320C78514000088D6 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		54FD744420C78515000088D6 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		54FD745620C7C69D000088D6 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		54FD747E20C7CD6F000088D6 /* KYIMessageTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYIMessageTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FD748120C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KYIMessageTest2 StickerPackExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FD748520C7CD6F000088D6 /* Stickers.xcstickers */ = {isa = PBXFileReference; lastKnownFileType = folder.stickers; name = Stickers.xcstickers; path = "KYIMessageTest2 StickerPackExtension/Stickers.xcstickers"; sourceTree = "<group>"; };
 		865FD4551EE14BFC000F243F /* VPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865FD4591EE14BFC000F243F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		865FD45B1EE14BFC000F243F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,8 +70,6 @@
 		865FD4641EE14BFC000F243F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		865FD4671EE14BFC000F243F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		865FD4691EE14BFC000F243F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		865FD46E1EE14BFC000F243F /* VPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		865FD4791EE14BFC000F243F /* VPNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		865FD4901EE157FA000F243F /* BSP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BSP.entitlements; sourceTree = "<group>"; };
 		DC07B14120C4C57300B112F5 /* VPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VPN.entitlements; sourceTree = "<group>"; };
 		DC07B14220C4EF5200B112F5 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -69,20 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC07B14320C4EF5200B112F5 /* NetworkExtension.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		865FD46B1EE14BFC000F243F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		865FD4761EE14BFC000F243F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +105,7 @@
 		865FD44C1EE14BFC000F243F = {
 			isa = PBXGroup;
 			children = (
+				54FD748520C7CD6F000088D6 /* Stickers.xcstickers */,
 				865FD4571EE14BFC000F243F /* VPN */,
 				865FD4561EE14BFC000F243F /* Products */,
 				865FD48C1EE15789000F243F /* Frameworks */,
@@ -117,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				865FD4551EE14BFC000F243F /* VPN.app */,
-				865FD46E1EE14BFC000F243F /* VPNTests.xctest */,
-				865FD4791EE14BFC000F243F /* VPNUITests.xctest */,
+				54FD747E20C7CD6F000088D6 /* KYIMessageTest2.app */,
+				54FD748120C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				DC07B14220C4EF5200B112F5 /* NetworkExtension.framework */,
+				54FD745620C7C69D000088D6 /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,6 +161,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		54FD747D20C7CD6F000088D6 /* KYIMessageTest2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54FD748C20C7CD6F000088D6 /* Build configuration list for PBXNativeTarget "KYIMessageTest2" */;
+			buildPhases = (
+				54FD747C20C7CD6F000088D6 /* Resources */,
+				54FD748B20C7CD6F000088D6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54FD748420C7CD6F000088D6 /* PBXTargetDependency */,
+			);
+			name = KYIMessageTest2;
+			productName = KYIMessageTest2;
+			productReference = 54FD747E20C7CD6F000088D6 /* KYIMessageTest2.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		54FD748020C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54FD748820C7CD6F000088D6 /* Build configuration list for PBXNativeTarget "KYIMessageTest2 StickerPackExtension" */;
+			buildPhases = (
+				54FD747F20C7CD6F000088D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KYIMessageTest2 StickerPackExtension";
+			productName = "KYIMessageTest2 StickerPackExtension";
+			productReference = 54FD748120C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		865FD4541EE14BFC000F243F /* VPN */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 865FD4821EE14BFC000F243F /* Build configuration list for PBXNativeTarget "VPN" */;
@@ -178,42 +210,6 @@
 			productReference = 865FD4551EE14BFC000F243F /* VPN.app */;
 			productType = "com.apple.product-type.application";
 		};
-		865FD46D1EE14BFC000F243F /* VPNTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 865FD4851EE14BFC000F243F /* Build configuration list for PBXNativeTarget "VPNTests" */;
-			buildPhases = (
-				865FD46A1EE14BFC000F243F /* Sources */,
-				865FD46B1EE14BFC000F243F /* Frameworks */,
-				865FD46C1EE14BFC000F243F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				865FD4701EE14BFC000F243F /* PBXTargetDependency */,
-			);
-			name = VPNTests;
-			productName = VPNTests;
-			productReference = 865FD46E1EE14BFC000F243F /* VPNTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		865FD4781EE14BFC000F243F /* VPNUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 865FD4881EE14BFC000F243F /* Build configuration list for PBXNativeTarget "VPNUITests" */;
-			buildPhases = (
-				865FD4751EE14BFC000F243F /* Sources */,
-				865FD4761EE14BFC000F243F /* Frameworks */,
-				865FD4771EE14BFC000F243F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				865FD47B1EE14BFC000F243F /* PBXTargetDependency */,
-			);
-			name = VPNUITests;
-			productName = VPNUITests;
-			productReference = 865FD4791EE14BFC000F243F /* VPNUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,6 +219,16 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "不愿透露姓名的洪先生";
 				TargetAttributes = {
+					54FD747D20C7CD6F000088D6 = {
+						CreatedOnToolsVersion = 9.3.1;
+						DevelopmentTeam = YLV4SZ3L4W;
+						ProvisioningStyle = Automatic;
+					};
+					54FD748020C7CD6F000088D6 = {
+						CreatedOnToolsVersion = 9.3.1;
+						DevelopmentTeam = YLV4SZ3L4W;
+						ProvisioningStyle = Automatic;
+					};
 					865FD4541EE14BFC000F243F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = YLV4SZ3L4W;
@@ -235,18 +241,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					865FD46D1EE14BFC000F243F = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = CE473MJ53W;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 865FD4541EE14BFC000F243F;
-					};
-					865FD4781EE14BFC000F243F = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = CE473MJ53W;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 865FD4541EE14BFC000F243F;
 					};
 				};
 			};
@@ -264,13 +258,29 @@
 			projectRoot = "";
 			targets = (
 				865FD4541EE14BFC000F243F /* VPN */,
-				865FD46D1EE14BFC000F243F /* VPNTests */,
-				865FD4781EE14BFC000F243F /* VPNUITests */,
+				54FD747D20C7CD6F000088D6 /* KYIMessageTest2 */,
+				54FD748020C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		54FD747C20C7CD6F000088D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FD748720C7CD6F000088D6 /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FD747F20C7CD6F000088D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FD748620C7CD6F000088D6 /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		865FD4531EE14BFC000F243F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,20 +288,6 @@
 				865FD4681EE14BFC000F243F /* LaunchScreen.storyboard in Resources */,
 				865FD4651EE14BFC000F243F /* Assets.xcassets in Resources */,
 				865FD4631EE14BFC000F243F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		865FD46C1EE14BFC000F243F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		865FD4771EE14BFC000F243F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,32 +308,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		865FD46A1EE14BFC000F243F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		865FD4751EE14BFC000F243F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		865FD4701EE14BFC000F243F /* PBXTargetDependency */ = {
+		54FD748420C7CD6F000088D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 865FD4541EE14BFC000F243F /* VPN */;
-			targetProxy = 865FD46F1EE14BFC000F243F /* PBXContainerItemProxy */;
-		};
-		865FD47B1EE14BFC000F243F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 865FD4541EE14BFC000F243F /* VPN */;
-			targetProxy = 865FD47A1EE14BFC000F243F /* PBXContainerItemProxy */;
+			target = 54FD748020C7CD6F000088D6 /* KYIMessageTest2 StickerPackExtension */;
+			targetProxy = 54FD748320C7CD6F000088D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -361,6 +338,120 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54FD748920C7CD6F000088D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLV4SZ3L4W;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "KYIMessageTest2 StickerPackExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = net.jiuzhang.Test001.KYIMessageTest2.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54FD748A20C7CD6F000088D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLV4SZ3L4W;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "KYIMessageTest2 StickerPackExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = net.jiuzhang.Test001.KYIMessageTest2.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54FD748D20C7CD6F000088D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLV4SZ3L4W;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = KYIMessageTest2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = net.jiuzhang.Test001.KYIMessageTest2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54FD748E20C7CD6F000088D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YLV4SZ3L4W;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = KYIMessageTest2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = net.jiuzhang.Test001.KYIMessageTest2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		865FD4801EE14BFC000F243F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,59 +576,27 @@
 			};
 			name = Release;
 		};
-		865FD4861EE14BFC000F243F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = CE473MJ53W;
-				INFOPLIST_FILE = VPNTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.godyu.sencanblue.VPNTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN.app/VPN";
-			};
-			name = Debug;
-		};
-		865FD4871EE14BFC000F243F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = CE473MJ53W;
-				INFOPLIST_FILE = VPNTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.godyu.sencanblue.VPNTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN.app/VPN";
-			};
-			name = Release;
-		};
-		865FD4891EE14BFC000F243F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = CE473MJ53W;
-				INFOPLIST_FILE = VPNUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.godyu.sencanblue.VPNUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = VPN;
-			};
-			name = Debug;
-		};
-		865FD48A1EE14BFC000F243F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = CE473MJ53W;
-				INFOPLIST_FILE = VPNUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.godyu.sencanblue.VPNUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = VPN;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		54FD748820C7CD6F000088D6 /* Build configuration list for PBXNativeTarget "KYIMessageTest2 StickerPackExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FD748920C7CD6F000088D6 /* Debug */,
+				54FD748A20C7CD6F000088D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54FD748C20C7CD6F000088D6 /* Build configuration list for PBXNativeTarget "KYIMessageTest2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FD748D20C7CD6F000088D6 /* Debug */,
+				54FD748E20C7CD6F000088D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		865FD4501EE14BFC000F243F /* Build configuration list for PBXProject "VPN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -552,24 +611,6 @@
 			buildConfigurations = (
 				865FD4831EE14BFC000F243F /* Debug */,
 				865FD4841EE14BFC000F243F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		865FD4851EE14BFC000F243F /* Build configuration list for PBXNativeTarget "VPNTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				865FD4861EE14BFC000F243F /* Debug */,
-				865FD4871EE14BFC000F243F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		865FD4881EE14BFC000F243F /* Build configuration list for PBXNativeTarget "VPNUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				865FD4891EE14BFC000F243F /* Debug */,
-				865FD48A1EE14BFC000F243F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

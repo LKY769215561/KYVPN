@@ -24,20 +24,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(VPNStatusDidChangeNotification)
+                                                 name:NEVPNStatusDidChangeNotification object:nil];
     
-    
-    //ping
-    self.pingTool = [[KYPingTool alloc] initWithHostName:@"www.baidu.com"];
-    self.pingTool.delegate = self;
-    [self.pingTool start];
     
     //vpn
     [KYVPNManager loadFromPreferencesWithCompletionHandler:^{
         [self VPNStatusDidChangeNotification];
+        [KYVPNManager saveToPreferencesWithCompletionHandler:^{
+            ALERT(@"Saved", @"Saved");
+        }];
     }];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(VPNStatusDidChangeNotification)
-                                                 name:NEVPNStatusDidChangeNotification object:nil];
+}
+
+- (IBAction)start:(id)sender
+{
+    self.pingTool = [[KYPingTool alloc] initWithHostName:@"www.baidu.com"];
+    self.pingTool.delegate = self;
+    [self.pingTool start];
 }
 
 
