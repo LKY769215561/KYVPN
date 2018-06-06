@@ -3,7 +3,7 @@
 //  VPN
 //
 //  Created by Kerain on 2018/6/5.
-//  Copyright © 2018年 不愿透露姓名的洪先生. All rights reserved.
+//  Copyright © 2018年 广州九章信息技术有限公司. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

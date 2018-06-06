@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		54F768EC20C626E9005A48C2 /* KYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F768EB20C626E9005A48C2 /* KYKeychain.m */; };
 		54F768EF20C64FBA005A48C2 /* KYVPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F768EE20C64FBA005A48C2 /* KYVPNManager.m */; };
+		54FD744520C78515000088D6 /* KYPingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FD744120C78514000088D6 /* KYPingTool.m */; };
+		54FD744620C78515000088D6 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FD744320C78514000088D6 /* SimplePing.m */; };
 		865FD45A1EE14BFC000F243F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 865FD4591EE14BFC000F243F /* main.m */; };
 		865FD45D1EE14BFC000F243F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 865FD45C1EE14BFC000F243F /* AppDelegate.m */; };
 		865FD4601EE14BFC000F243F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865FD45F1EE14BFC000F243F /* ViewController.m */; };
@@ -40,6 +42,10 @@
 		54F768EB20C626E9005A48C2 /* KYKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYKeychain.m; sourceTree = "<group>"; };
 		54F768ED20C64FBA005A48C2 /* KYVPNManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYVPNManager.h; sourceTree = "<group>"; };
 		54F768EE20C64FBA005A48C2 /* KYVPNManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KYVPNManager.m; sourceTree = "<group>"; };
+		54FD744120C78514000088D6 /* KYPingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYPingTool.m; sourceTree = "<group>"; };
+		54FD744220C78514000088D6 /* KYPingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYPingTool.h; sourceTree = "<group>"; };
+		54FD744320C78514000088D6 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		54FD744420C78515000088D6 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
 		865FD4551EE14BFC000F243F /* VPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		865FD4591EE14BFC000F243F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		865FD45B1EE14BFC000F243F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +92,10 @@
 		54F768E920C626B4005A48C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				54FD744220C78514000088D6 /* KYPingTool.h */,
+				54FD744120C78514000088D6 /* KYPingTool.m */,
+				54FD744420C78515000088D6 /* SimplePing.h */,
+				54FD744320C78514000088D6 /* SimplePing.m */,
 				54F768EA20C626E9005A48C2 /* KYKeychain.h */,
 				54F768EB20C626E9005A48C2 /* KYKeychain.m */,
 				54F768ED20C64FBA005A48C2 /* KYVPNManager.h */,
@@ -295,7 +305,9 @@
 				865FD4601EE14BFC000F243F /* ViewController.m in Sources */,
 				54F768EF20C64FBA005A48C2 /* KYVPNManager.m in Sources */,
 				865FD45D1EE14BFC000F243F /* AppDelegate.m in Sources */,
+				54FD744520C78515000088D6 /* KYPingTool.m in Sources */,
 				865FD45A1EE14BFC000F243F /* main.m in Sources */,
+				54FD744620C78515000088D6 /* SimplePing.m in Sources */,
 				54F768EC20C626E9005A48C2 /* KYKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

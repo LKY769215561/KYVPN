@@ -9,10 +9,37 @@
 #import "ViewController.h"
 #import "KYVPNManager.h"
 #import <NetworkExtension/NetworkExtension.h>
+#import "KYPingTool.h"
 
+@interface ViewController()<KYPingDelegate>
+
+@property(nonatomic, strong) KYPingTool *pingTool;
+
+@end
 
 
 @implementation ViewController
+
+#pragma mark - 生命周期
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+    //ping
+    self.pingTool = [[KYPingTool alloc] initWithHostName:@"www.baidu.com"];
+    self.pingTool.delegate = self;
+    [self.pingTool start];
+    
+    //vpn
+    [KYVPNManager loadFromPreferencesWithCompletionHandler:^{
+        [self VPNStatusDidChangeNotification];
+    }];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(VPNStatusDidChangeNotification)
+                                                 name:NEVPNStatusDidChangeNotification object:nil];
+}
+
 
 #pragma mark - IBAction
 - (IBAction)buttonPressed:(UIButton *)sender
@@ -106,16 +133,22 @@
     }
 }
 
-#pragma mark - 生命周期
-- (void)viewDidLoad
+
+#pragma mark - KYPingDelegate
+- (void) didPingSucccessWithTime:(float)time withError:(NSError *)error
 {
-    [super viewDidLoad];
-    [KYVPNManager loadFromPreferencesWithCompletionHandler:^{
-        [self VPNStatusDidChangeNotification];
-    }];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(VPNStatusDidChangeNotification)
-                                                 name:NEVPNStatusDidChangeNotification object:nil];
+    if(!error)
+    {
+        self.delayLabel.text = [[NSString stringWithFormat:@"当前网络延迟:%d", (int)time] stringByAppendingString:@"ms"];
+        if (time >= 1500)
+        {
+            self.delayLabel.backgroundColor = [UIColor redColor];
+        }else
+        {
+            self.delayLabel.backgroundColor = [UIColor lightGrayColor];
+        }
+        
+    }
 }
 
 - (void)dealloc

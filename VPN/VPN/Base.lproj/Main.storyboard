@@ -85,11 +85,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前网络延迟:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTi-rE-Aj1">
+                                <rect key="frame" x="20" y="457" width="335" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kjp-nu-sny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="WTi-rE-Aj1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="5Ak-cC-gbj"/>
+                            <constraint firstAttribute="trailing" secondItem="WTi-rE-Aj1" secondAttribute="trailing" constant="20" id="JBp-kg-uTp"/>
                             <constraint firstItem="Fl2-II-tif" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Kg3-ZJ-9ru"/>
                             <constraint firstAttribute="trailing" secondItem="Fl2-II-tif" secondAttribute="trailing" constant="20" id="LEf-ic-oim"/>
+                            <constraint firstItem="WTi-rE-Aj1" firstAttribute="top" secondItem="Fl2-II-tif" secondAttribute="bottom" constant="40" id="LyV-lp-8B5"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Fl2-II-tif" secondAttribute="bottom" constant="250" id="UGZ-i7-E8J"/>
                         </constraints>
                         <variation key="default">
@@ -112,6 +125,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="delayLabel" destination="WTi-rE-Aj1" id="YZ2-Mi-5AI"/>
                         <outlet property="statusLabel" destination="Fl2-II-tif" id="1tn-VF-KEW"/>
                     </connections>
                 </viewController>
